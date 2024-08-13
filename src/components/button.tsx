@@ -46,8 +46,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(props,
     ...rest
   } = props
   return (
-    <button {...rest}></button>
+    <button {...rest} className={className} color={color}>{children}</button>
   )
-}
-
-export default Button
+})
+export default Button;
