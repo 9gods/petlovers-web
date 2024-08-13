@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        "hanson": ['Hanson Bold', 'sans-serif'],
+        "work": ['Work Sans', 'sans-serif']
+      },
       colors: {
         "petrol-blue": {
           "500": "#00A3A3",
